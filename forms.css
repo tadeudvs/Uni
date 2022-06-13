@@ -1,0 +1,125 @@
+/*formatações gerais*/
+body {
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+  }
+  /*sessão bem vindo*/
+  #sessao-bem-vindo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  #bem-vindo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    padding:1.2rem 3rem;
+    background-image: linear-gradient(to right, rgb(16, 129, 194), rgb(15, 93, 104));
+    text-align: center;
+    border-radius: 0.8rem;
+    box-shadow: rgb(0 0 0 / 8%) 0px 0.5rem 2rem;
+    animation: go-back 1s infinite alternate;
+  }
+  
+  @keyframes go-back {
+    from {
+      transform: translateX(7px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  #input-bem-vindo {
+    padding: 0.8rem 3.5rem;
+    border: none;
+    background: rgba(140, 145, 165, 0.08);
+    color: rgb(255, 255, 255);
+    border-radius: 0.3rem;
+    margin: 1rem 0;
+  }
+  
+  #entrar-bem-vindo {
+    padding: 0.8rem 6.4rem;
+
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  #entrar-bem-vindo a {
+    text-decoration: none;
+    color: #fff;
+  }
+  @media (max-width: 739px) {
+    #bem-vindo {
+      max-width: 16rem;
+      font-size: 0.8rem;
+    }
+  }
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 3px solid dodgerblue;
+    padding: 15px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 16px;
+}
+.genero{
+    display: flex;
+    
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 11px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+#submit{
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
